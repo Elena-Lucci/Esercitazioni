@@ -20,9 +20,9 @@ const isAutumn = false;
 const itIsRaining = false;
 const isSummer = true;
 
-console.log(isAutumn||!itIsRaining);
-console.log(isSunnyDay&&isSummer);
-console.log(isSunnyDay||isAutumn);
-console.log(!isSummer&&isSunnyDay);
-console.log(!itIsRaining&&!isSummer);
-console.log(!isSunnyDay||itIsRaining);
+console.log(isAutumn || !itIsRaining);
+console.log(isSunnyDay && isSummer);
+console.log(isSunnyDay || isAutumn);
+console.log(!isSummer && isSunnyDay);
+console.log(!itIsRaining && !isSummer);
+console.log(!isSunnyDay || itIsRaining);
