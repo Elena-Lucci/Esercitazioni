@@ -1,0 +1,17 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 300px;
+    border: 1px solid black;
+}
+
+.bordoblu {
+    border: 2px solid blue;
+}
