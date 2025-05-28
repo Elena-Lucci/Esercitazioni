@@ -1,6 +1,7 @@
 body {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(240, 172, 172);
 }
 
 
@@ -9,9 +10,65 @@ body {
     flex-direction: column;
     gap: 1rem;
     max-width: 300px;
-    border: 1px solid black;
+    border: 3px solid rgb(203, 62, 62);
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px rgb(203, 62, 62);
+    background-image: url(https://res.cloudinary.com/gimmersta-wallpaper/image/upload/c_fill,f_auto,fl_progressive,q_auto,h_500/v1715873980/articles/GE0114RE05W_product.jpg);
+    background-size: cover;
 }
 
-.bordoblu {
-    border: 2px solid blue;
+.diff-facile { border-color: limegreen; }
+.diff-media  { border-color: rgb(252, 215, 48); }
+.diff-difficile { border-color: red; }
+
+.badge-difficolta {
+background-color: rgba(252, 242, 228, 0.918);
+padding: 2px;
+width: 100%;
+text-align: center;
 }
+
+.badge-difficolta-facile {
+    color: limegreen;
+}
+
+.badge-difficolta-media {
+    color:  rgb(252, 140, 48);
+    
+}
+
+.badge-difficolta-difficile {
+    color: red;
+}
+
+.img { 
+    border-radius: 50%;
+   box-shadow: 0px 0px 30px whitesmoke;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+
+
+.title, .testo, .ingredienti {
+    font-family: 'Ma Shan Zheng', cursive;
+    color: rgb(231, 192, 145);
+}
+
+.title {
+    font-size: 30px;
+    text-align: center;
+    color: bisque;
+}
+
+.lable {
+    color: white;
+    font-family: 'Ma Shan Zheng', cursive;
+    font-size: 20px;
+}
+
