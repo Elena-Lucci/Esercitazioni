@@ -162,14 +162,10 @@ card.classList.add(`diff-${x.difficolta}`);
 const badge = document.createElement('span');
 badge.innerText = x.difficolta.toUpperCase();
 badge.className = " badge-difficolta"
-if (x.difficolta === "facile") {
-    badge.className += " badge-difficolta-facile"
-} else if (x.difficolta === "media") {
-    badge.className += " badge-difficolta-media"
-} else {badge.className += " badge-difficolta-difficile"}
+badge.className += x.difficolta === "facile" ? " badge-difficolta-facile" : x.difficolta === "media"? " badge-difficolta-media": " badge-difficolta-difficile"
 card.appendChild(badge);
 
-label.className = "lable"
+label.className = "lable";
 
         card.appendChild(titolo);
         card.appendChild(image);
